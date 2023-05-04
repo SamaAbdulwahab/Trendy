@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trendy</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="slide.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+        <link rel="stylesheet" href="webfontkit-20230404-121456/stylesheet.css" type="text/css" charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Manrope:wght@500&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  </head>
+  <body class="miami">
+    <input class="search" placeholder="Search outfits">
+
+
+
+    <h1 class="fonttitle" style="text-align: center; font-size: 70px; color: black; position: absolute;  right: 43%; top: 15px;">Trendy</h1>
+    <p style="text-align: center; font-size: 40px; color: black; position: absolute;  right: 1%; top: 15px;"><a href="index.html">Log out</a></p>
+
+    <h2 style="text-align: center; font-size: 40px; color: black; position: absolute; right: 23%; top: 130px;">Check out some of the models good looking fits</h2>
+    <div class="container">
+      
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"> <a href="profile.html"><img src="images/pinkLV.png"></a> </div>
+              <div class="swiper-slide"> <img src="images/img_5442_resize-2.jpg"> </div>
+              <div class="swiper-slide"> <img src="images/156931965a420c68240233868580.jpg"> </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+
+const swiper = new Swiper('.swiper', {
+autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+
+    </script>
+</body>
+</html>
